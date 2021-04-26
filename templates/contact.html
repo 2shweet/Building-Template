@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h1>About-us</h1>
+                </div>
+                <div class="col-md-6 col-12 buttons">
+                    <!-- Buttons -->
+                    <a href="#" class="btn btn-warning">Get Started</a>
+                    <a href="#" class="btn btn-primary">view our services</a>
+                    <!-- Buttons End-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section Start -->
+    <section id="contact-page">
+        <div class="container">
+            <div class="row" data-aos="fade-up" data-aos-duration="500">
+                <div class="col-12 col-lg-12 col-xl-4 map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15227.469328526357!2d78.3476237!3d17.4181533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x70575b47f01c2719!2sBlueBerry+Digital+Labs+PVT+ltd!5e0!3m2!1sen!2sin!4v1535024898579" width="600" height="450" frameborder="0" style="width: 100%;height: 100%; border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-lg-12 col-xl-8">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...text ever since the 1500s, when an unknown printer took a galley of type and...</p>
+                    <form method='POST'>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" name="name" id="name" placeholder="Enter your Name" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" name="email" id="email" placeholder="Enter your Email" required>
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <input class="form-control" name="number" id="number" placeholder="Phone number" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" name="message" id="message" placeholder="Enter Your Message" required ></textarea>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <input class="btn btn-default pull-left" type="submit" value="Contact us">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+    <!-- Support section Ended -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading">
+                                <h2>subscribe to our monThly newsletter</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <form class="row form-inline" >
+                                <div class="col-md-1 sub-hidden"></div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <input type="text" class="form-control" placeholder="Enter your name" required/>
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <input type="email" class="form-control" placeholder="Enter your Email id" required/>
+                                </div>
+                                <div class="col-lg-2 col-md-4">
+                                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                                </div>
+                                <div class="col-md-1 sub-hidden"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

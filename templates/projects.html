@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h1>Our Projects</h1>
+                </div>
+                <div class="col-md-6 col-12 buttons">
+                    <!-- Buttons -->
+                    <a href="#" class="btn btn-warning">Get Started</a>
+                    <a href="#" class="btn btn-primary">view our services</a>
+                    <!-- Buttons End-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service section Start-->
+    <section id="services">
+        <!-- Container Start -->
+        <div class="container">
+            <!-- First Row Start -->
+            <div class="row main-content" data-aos="fade-up" data-aos-duration="500">
+                <div class="col-sm-12">
+                    <h3>Brij Khalifa (Dubai)</h3>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-8">
+                    <div class="contant">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...</p>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...text ever since the 1500s, when an unknown printer took a galley of type and...</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <img class="img-responsive career-img" src="/static/images/service-1.jpg" alt="service-2">
+                </div>
+            </div>
+            <!-- First Row Ended -->
+
+            <!-- Second Row Start -->
+            <div class="row main-content" data-aos="fade-up" data-aos-duration="500">
+                <div class="col-sm-12">
+                    <h3>The Twin Towers</h3>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <img class="img-responsive career-img" src="/static/images/service-2.jpg" alt="service-2">
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-8">
+                    <div class="contant">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...</p>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...text ever since the 1500s, when an unknown printer took a galley of type and...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Row Ended -->
+
+            <!-- Third Row Start -->
+            <div class="row main-content" data-aos="fade-up" data-aos-duration="500">
+                <div class="col-sm-12">
+                    <h3>Brij Khalifa (Dubai)</h3>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-8">
+                    <div class="contant">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...</p>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and...text ever since the 1500s, when an unknown printer took a galley of type and...</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <img class="img-responsive career-img" src="/static/images/service-3.jpg" alt="service-2">
+                </div>
+            </div>
+            <!-- Third Row Ended -->
+        </div>
+        <!-- Container Ended -->
+    </section>
+    <!-- Service section Ended -->
+
+    <!-- Support section Ended -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading">
+                                <h2>subscribe to our monThly newsletter</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <form class="row form-inline" method='POST'>
+                                <div class="col-md-1 sub-hidden"></div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    <input class="form-control" name='email_name' id='email_name' placeholder="Enter your name" required/>
+                                </div>
+                                <div class="col-lg-4 col-md-4 form-group">
+                                    {{ form.csrf_token }}
+                                    <input class="form-control" name="email_email" id='email_email' placeholder="Enter your email id" required/>
+                                </div>
+                                <div class="col-lg-2 col-md-4">
+
+                                    <input class="btn btn-primary" type="submit" value="Subscribe">
+                                </div>
+                                <div class="col-md-1 sub-hidden"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
